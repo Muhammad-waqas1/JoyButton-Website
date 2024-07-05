@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   {% load static %}
-  <link rel="icon" href="{% static 'image/gamepad.png' %}" type="image/png">
+  <link rel="icon" href="{% static '/images/game-controller.png' %}" type="image/png">
   <title>JoyButton</title>
   <link rel="stylesheet" href=" {% static 'bootstrap.css' %} ">
   <link rel="stylesheet" href=" {% static 'style.css' %} ">
@@ -17,14 +17,14 @@
   <link rel="stylesheet" href=" {% static 'flaticon.css' %} ">
 
   <link rel="stylesheet" href=" {% static 'style(1).css' %} ">
-  <script type="text/javascript" async="" src="./JoyButton_files/analytics.js.download"
+  <script type="text/javascript" async="" src="./static/analytics.js.download"
     nonce="5d0eadca-ba13-4e17-b50c-e46dca423060"></script>
-  <script defer="" referrerpolicy="origin" src="./JoyButton_files/s.js.download"></script>
+  <script defer="" referrerpolicy="origin" src="./static/s.js.download"></script>
   <script
     nonce="5d0eadca-ba13-4e17-b50c-e46dca423060">try { (function (w, d) { !function (c, d, e, f) { if (c.zaraz) console.error("zaraz is loaded twice"); else { c[e] = c[e] || {}; c[e].executed = []; c.zaraz = { deferred: [], listeners: [] }; c.zaraz._v = "5714"; c.zaraz.q = []; c.zaraz._f = function (g) { return async function () { var h = Array.prototype.slice.call(arguments); c.zaraz.q.push({ m: g, a: h }) } }; for (const i of ["track", "set", "debug"]) c.zaraz[i] = c.zaraz._f(i); c.zaraz.init = () => { var j = d.getElementsByTagName(f)[0], k = d.createElement(f), l = d.getElementsByTagName("title")[0]; l && (c[e].t = d.getElementsByTagName("title")[0].text); c[e].x = Math.random(); c[e].w = c.screen.width; c[e].h = c.screen.height; c[e].j = c.innerHeight; c[e].e = c.innerWidth; c[e].l = c.location.href; c[e].r = d.referrer; c[e].k = c.screen.colorDepth; c[e].n = d.characterSet; c[e].o = (new Date).getTimezoneOffset(); if (c.dataLayer) for (const p of Object.entries(Object.entries(dataLayer).reduce(((q, r) => ({ ...q[1], ...r[1] })), {}))) zaraz.set(p[0], p[1], { scope: "page" }); c[e].q = []; for (; c.zaraz.q.length;) { const s = c.zaraz.q.shift(); c[e].q.push(s) } k.defer = !0; for (const t of [localStorage, sessionStorage]) Object.keys(t || {}).filter((v => v.startsWith("_zaraz_"))).forEach((u => { try { c[e]["z_" + u.slice(7)] = JSON.parse(t.getItem(u)) } catch { c[e]["z_" + u.slice(7)] = t.getItem(u) } })); k.referrerPolicy = "origin"; k.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(c[e]))); j.parentNode.insertBefore(k, j) };["complete", "interactive"].includes(d.readyState) ? zaraz.init() : c.addEventListener("DOMContentLoaded", zaraz.init) } }(w, d, "zarazData", "script"); })(window, document) } catch (e) { throw fetch("/cdn-cgi/zaraz/t"), e; };</script>
-  <script type="text/javascript" charset="UTF-8" src="./JoyButton_files/common.js.download"
+  <script type="text/javascript" charset="UTF-8" src="./static/common.js.download"
     nonce="5d0eadca-ba13-4e17-b50c-e46dca423060"></script>
-  <script type="text/javascript" charset="UTF-8" src="./JoyButton_files/util.js.download"
+  <script type="text/javascript" charset="UTF-8" src="./static/util.js.download"
     nonce="5d0eadca-ba13-4e17-b50c-e46dca423060"></script>
 </head>
 
@@ -36,7 +36,7 @@
         <div class="container">
 
           <a class="navbar-brand logo_h" href="https://preview.colorlib.com/theme/comodo/index.html"><img
-              src="./JoyButton_files/logo.png" alt=""></a>
+              src="{% static '/images/logo.png' %}" alt=""></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar"></span>
@@ -98,7 +98,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="home_left_img">
-              <img class="img-fluid" src="./JoyButton_files/home-left.png" alt="">
+              <img class="img-fluid" src="{% static '/images/left.png' %}" alt="">
             </div>
           </div>
           <div class="col-lg-6">
@@ -143,7 +143,7 @@
         </div>
         <div class="col-lg-6">
           <div class="about_us_image_box justify-content-center">
-            <img class="img-fluid w-100" src="./JoyButton_files/about_img.png" alt="">
+            <img class="img-fluid w-100" src="{% static '/images/about_img.png' %}" alt="">
           </div>
         </div>
       </div>
@@ -164,7 +164,7 @@
       <div class="row text-center">
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="new_games_item">
-            <img src="./JoyButton_files/b_map1.png" alt="">
+            <img src="{% static '/images/b_map1.png' %}" alt="">
             <div class="upcoming_title">
               <h3><a href="https://preview.colorlib.com/theme/comodo/games.html">Best Ps4 Games</a></h3>
             </div>
@@ -172,7 +172,7 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="new_games_item">
-            <img src="./JoyButton_files/b_map2.png" alt="">
+            <img src="{% static '/images/b_map2.png' %}" alt="">
             <div class="upcoming_title">
               <h3><a href="https://preview.colorlib.com/theme/comodo/games.html">World Dart 2019</a></h3>
             </div>
@@ -180,7 +180,7 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="new_games_item">
-            <img src="./JoyButton_files/b_map3.png" alt="">
+            <img src="{% static '/images/b_map3.png' %}" alt="">
             <div class="upcoming_title">
               <h3><a href="https://preview.colorlib.com/theme/comodo/games.html">New XBox Games</a></h3>
             </div>
@@ -188,7 +188,7 @@
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
           <div class="new_games_item">
-            <img src="./JoyButton_files/b_map4.png" alt="">
+            <img src="{% static '/images/b_map4.png' %}" alt="">
             <div class="upcoming_title">
               <h3><a href="https://preview.colorlib.com/theme/comodo/games.html">Amarican Football</a></h3>
             </div>
@@ -230,7 +230,7 @@
             <div class="row recent_update_text">
               <div class="col-lg-6">
                 <div class="chart_img">
-                  <img class="img-fluid" src="./JoyButton_files/recent_up.png" alt="">
+                  <img class="img-fluid" src="{% static '/images/recent_up.png' %}" alt="">
                 </div>
               </div>
               <div class="col-lg-6">
@@ -249,7 +249,7 @@
             <div class="row recent_update_text">
               <div class="col-lg-6">
                 <div class="chart_img">
-                  <img class="img-fluid" src="./JoyButton_files/recent_up.png" alt="">
+                  <img class="img-fluid" src="{% static '/images/recent_up.png' %}" alt="">
                 </div>
               </div>
               <div class="col-lg-6">
@@ -268,7 +268,7 @@
             <div class="row recent_update_text">
               <div class="col-lg-6">
                 <div class="chart_img">
-                  <img class="img-fluid" src="./JoyButton_files/recent_up.png" alt="">
+                  <img class="img-fluid" src="{% static '/images/recent_up.png' %}" alt="">
                 </div>
               </div>
               <div class="col-lg-6">
@@ -305,7 +305,7 @@
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="single-gallery">
                 <div class="overlay"></div>
-                <img class="img-fluid w-100" src="./JoyButton_files/gallery_img1.png" alt="">
+                <img class="img-fluid w-100" src="{% static '/images/gallery_img1.png' %}" alt="">
                 <div class="content">
                   <a class="pop-up-image" href=" {% static 'gallery_img1.png' %} ">
                     <i class="lnr lnr-eye"></i>
@@ -316,7 +316,7 @@
             <div class="col-lg-6 col-md-6 col-sm-6">
               <div class="single-gallery">
                 <div class="overlay"></div>
-                <img class="img-fluid w-100" src="./JoyButton_files/gallery_img2.png" alt="">
+                <img class="img-fluid w-100" src="{% static '/images/gallery_img2.png' %}" alt="">
                 <div class="content">
                   <a class="pop-up-image" href=" {% static 'gallery_img2.png' %} ">
                     <i class="lnr lnr-eye"></i>
@@ -327,7 +327,7 @@
             <div class="col-lg-12">
               <div class="single-gallery">
                 <div class="overlay"></div>
-                <img class="img-fluid w-100" src="./JoyButton_files/gallery_img3.png" alt="">
+                <img class="img-fluid w-100" src="{% static '/images/gallery_img3.png' %}" alt="">
                 <div class="content">
                   <a class="pop-up-image" href=" {% static 'gallery_img3.png' %} ">
                     <i class="lnr lnr-eye"></i>
@@ -340,7 +340,7 @@
         <div class="col-lg-4 hidden-md hidden-sm">
           <div class="single-gallery">
             <div class="overlay"></div>
-            <img class="img-fluid w-100" src="./JoyButton_files/gallery_img4.png" alt="">
+            <img class="img-fluid w-100" src="{% static '/images/gallery_img4.png' %}" alt="">
             <div class="content">
               <a class="pop-up-image" href=" {% static 'gallery_img4.png' %} ">
                 <i class="lnr lnr-eye"></i>
@@ -364,7 +364,7 @@
             style="transform: translate3d(-3330px, 0px, 0px); transition: all 0s ease 0s; width: 7770px;">
             <div class="owl-item cloned" style="width: 1110px;">
               <div class="testi_item">
-                <img src="./JoyButton_files/quote.png" alt="">
+                <img src="{% static '/images/quote.png' %}" alt="">
                 <h4>Fanny Spencer</h4>
                 <ul class="list">
                   <li><a href="https://preview.colorlib.com/theme/comodo/index.html#"><i class="fa fa-star"></i></a>
@@ -390,7 +390,7 @@
             </div>
             <div class="owl-item cloned" style="width: 1110px;">
               <div class="testi_item">
-                <img src="./JoyButton_files/quote.png" alt="">
+                <img src="{% static '/images/quote.png' %}" alt="">
                 <h4>Fanny Spencer</h4>
                 <ul class="list">
                   <li><a href="https://preview.colorlib.com/theme/comodo/index.html#"><i class="fa fa-star"></i></a>
@@ -416,7 +416,7 @@
             </div>
             <div class="owl-item" style="width: 1110px;">
               <div class="testi_item">
-                <img src="./JoyButton_files/quote.png" alt="">
+                <img src="{% static '/images/quote.png' %}" alt="">
                 <h4>Fanny Spencer</h4>
                 <ul class="list">
                   <li><a href="https://preview.colorlib.com/theme/comodo/index.html#"><i class="fa fa-star"></i></a>
@@ -442,7 +442,7 @@
             </div>
             <div class="owl-item active" style="width: 1110px;">
               <div class="testi_item">
-                <img src="./JoyButton_files/quote.png" alt="">
+                <img src="{% static '/images/quote.png' %}" alt="">
                 <h4>Fanny Spencer</h4>
                 <ul class="list">
                   <li><a href="https://preview.colorlib.com/theme/comodo/index.html#"><i class="fa fa-star"></i></a>
@@ -468,7 +468,7 @@
             </div>
             <div class="owl-item" style="width: 1110px;">
               <div class="testi_item">
-                <img src="./JoyButton_files/quote.png" alt="">
+                <img src="{% static '/images/quote.png' %}" alt="">
                 <h4>Fanny Spencer</h4>
                 <ul class="list">
                   <li><a href="https://preview.colorlib.com/theme/comodo/index.html#"><i class="fa fa-star"></i></a>
@@ -494,7 +494,7 @@
             </div>
             <div class="owl-item cloned" style="width: 1110px;">
               <div class="testi_item">
-                <img src="./JoyButton_files/quote.png" alt="">
+                <img src="{% static '/images/quote.png' %}" alt="">
                 <h4>Fanny Spencer</h4>
                 <ul class="list">
                   <li><a href="https://preview.colorlib.com/theme/comodo/index.html#"><i class="fa fa-star"></i></a>
@@ -520,7 +520,7 @@
             </div>
             <div class="owl-item cloned" style="width: 1110px;">
               <div class="testi_item">
-                <img src="./JoyButton_files/quote.png" alt="">
+                <img src="{% static '/images/quote.png' %}" alt="">
                 <h4>Fanny Spencer</h4>
                 <ul class="list">
                   <li><a href="https://preview.colorlib.com/theme/comodo/index.html#"><i class="fa fa-star"></i></a>
@@ -695,7 +695,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="blog_items">
             <div class="blog_img_box">
-              <img class="img-fluid" src="./JoyButton_files/blog_img1.png" alt="">
+              <img class="img-fluid" src="{% static '/images/blog_img1.png' %}" alt="">
             </div>
             <div class="blog_content">
               <a class="title" href="https://preview.colorlib.com/theme/comodo/blog.html">Portable Fashion for women</a>
@@ -715,7 +715,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="blog_items">
             <div class="blog_img_box">
-              <img class="img-fluid" src="./JoyButton_files/blog_img2.png" alt="">
+              <img class="img-fluid" src="{% static '/images/blog_img2.png' %}" alt="">
             </div>
             <div class="blog_content">
               <a class="title" href="https://preview.colorlib.com/theme/comodo/blog.html">Portable Fashion for women</a>
@@ -735,7 +735,7 @@
         <div class="col-lg-4 hidden-md">
           <div class="blog_items">
             <div class="blog_img_box">
-              <img class="img-fluid" src="./JoyButton_files/blog_img3.png" alt="">
+              <img class="img-fluid" src="{% static '/images/blog_img3.png' %}" alt="">
             </div>
             <div class="blog_content">
               <a class="title" href="https://preview.colorlib.com/theme/comodo/blog.html">Portable Fashion for women</a>
@@ -886,25 +886,25 @@
 
 
 
-  <script src="./JoyButton_files/jquery-3.2.1.min.js.download"></script>
-  <script src="./JoyButton_files/popper.js.download"></script>
-  <script src="./JoyButton_files/bootstrap.min.js.download"></script>
-  <script src="./JoyButton_files/stellar.js.download"></script>
-  <script src="./JoyButton_files/jquery.magnific-popup.min.js.download"></script>
-  <script src="./JoyButton_files/jquery.nice-select.min.js.download"></script>
-  <script src="./JoyButton_files/imagesloaded.pkgd.min.js.download"></script>
-  <script src="./JoyButton_files/isotope-min.js.download"></script>
-  <script src="./JoyButton_files/owl.carousel.min.js.download"></script>
-  <script src="./JoyButton_files/jquery.ajaxchimp.min.js.download"></script>
-  <script src="./JoyButton_files/jquery.waypoints.min.js.download"></script>
-  <script src="./JoyButton_files/jquery.counterup.min.js.download"></script>
-  <script src="./JoyButton_files/mail-script.js.download"></script>
+  <script src="./static/jquery-3.2.1.min.js.download"></script>
+  <script src="./static/popper.js.download"></script>
+  <script src="./static/bootstrap.min.js.download"></script>
+  <script src="./static/stellar.js.download"></script>
+  <script src="./static/jquery.magnific-popup.min.js.download"></script>
+  <script src="./static/jquery.nice-select.min.js.download"></script>
+  <script src="./static/imagesloaded.pkgd.min.js.download"></script>
+  <script src="./static/isotope-min.js.download"></script>
+  <script src="./static/owl.carousel.min.js.download"></script>
+  <script src="./static/jquery.ajaxchimp.min.js.download"></script>
+  <script src="./static/jquery.waypoints.min.js.download"></script>
+  <script src="./static/jquery.counterup.min.js.download"></script>
+  <script src="./static/mail-script.js.download"></script>
 
-  <script src="./JoyButton_files/js"></script>
-  <script src="./JoyButton_files/gmaps.min.js.download"></script>
-  <script src="./JoyButton_files/theme.js.download"></script>
+  <script src="./static/js"></script>
+  <script src="./static/gmaps.min.js.download"></script>
+  <script src="./static/theme.js.download"></script>
 
-  <script async="" src="./JoyButton_files/js(1)"></script>
+  <script async="" src="./static/js(1)"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -912,7 +912,7 @@
 
     gtag('config', 'UA-23581568-13');
   </script>
-  <script defer="" src="./JoyButton_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+  <script defer="" src="./static/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
     integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
     data-cf-beacon="{&quot;rayId&quot;:&quot;89e7191a9a3b4085&quot;,&quot;version&quot;:&quot;2024.4.1&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;}"
     crossorigin="anonymous"></script>

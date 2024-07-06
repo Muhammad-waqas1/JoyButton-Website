@@ -407,8 +407,16 @@ small {
 }
 
 .img-fluid {
-    max-width: 100%;
-    height: auto
+    max-width: 120%;
+    /* height: auto */
+    transition-property: all;
+    transition-duration: .3s;
+    transition-delay: 0s;
+}
+
+.img-fluid:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transform: scale(1.03);
 }
 
 .figure {
@@ -530,6 +538,7 @@ pre code {
         flex: 0 0 50%;
         max-width: 50%
     }
+
     .col-sm-12 {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
@@ -543,36 +552,43 @@ pre code {
         flex: 0 0 25%;
         max-width: 25%
     }
+
     .col-md-4 {
         -ms-flex: 0 0 33.333333%;
         flex: 0 0 33.333333%;
         max-width: 33.333333%
     }
+
     .col-md-5 {
         -ms-flex: 0 0 41.666667%;
         flex: 0 0 41.666667%;
         max-width: 41.666667%
     }
+
     .col-md-6 {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%
     }
+
     .col-md-8 {
         -ms-flex: 0 0 66.666667%;
         flex: 0 0 66.666667%;
         max-width: 66.666667%
     }
+
     .col-md-9 {
         -ms-flex: 0 0 75%;
         flex: 0 0 75%;
         max-width: 75%
     }
+
     .col-md-12 {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%
     }
+
     .offset-md-2 {
         margin-left: 16.666667%
     }
@@ -584,36 +600,43 @@ pre code {
         flex: 0 0 25%;
         max-width: 25%
     }
+
     .col-lg-4 {
         -ms-flex: 0 0 33.333333%;
         flex: 0 0 33.333333%;
         max-width: 33.333333%
     }
+
     .col-lg-5 {
         -ms-flex: 0 0 41.666667%;
         flex: 0 0 41.666667%;
         max-width: 41.666667%
     }
+
     .col-lg-6 {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%
     }
+
     .col-lg-8 {
         -ms-flex: 0 0 66.666667%;
         flex: 0 0 66.666667%;
         max-width: 66.666667%
     }
+
     .col-lg-9 {
         -ms-flex: 0 0 75%;
         flex: 0 0 75%;
         max-width: 75%
     }
+
     .col-lg-12 {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%
     }
+
     .offset-lg-2 {
         margin-left: 16.666667%
     }
@@ -747,6 +770,7 @@ textarea.form-control {
         justify-content: center;
         margin-bottom: 0
     }
+
     .form-inline .form-group {
         display: -ms-flexbox;
         display: flex;
@@ -758,12 +782,13 @@ textarea.form-control {
         align-items: center;
         margin-bottom: 0
     }
+
     .form-inline .form-control {
         display: inline-block;
         width: auto;
         vertical-align: middle
     }
-    
+
     .form-inline .input-group {
         width: auto
     }
@@ -1312,39 +1337,45 @@ fieldset:disabled a.btn {
         -ms-flex-pack: start;
         justify-content: flex-start
     }
+
     .navbar-expand-lg .navbar-nav {
         -ms-flex-direction: row;
         flex-direction: row
     }
+
     .navbar-expand-lg .navbar-nav .dropdown-menu {
         position: absolute
     }
+
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: .5rem;
         padding-left: .5rem
     }
+
     .navbar-expand-lg>.container {
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap
     }
+
     .navbar-expand-lg .navbar-collapse {
         display: -ms-flexbox !important;
         display: flex !important;
         -ms-flex-preferred-size: auto;
         flex-basis: auto
     }
+
     .navbar-expand-lg .navbar-toggler {
         display: none
     }
 }
 
 .navbar-light .navbar-brand {
-    color: rgba(0, 0, 0, .9)
+    color: rgba(255, 255, 255, 0.9)
 }
 
 .navbar-light .navbar-brand:focus,
 .navbar-light .navbar-brand:hover {
-    color: rgba(0, 0, 0, .9)
+    color: #87d3a2;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -1476,6 +1507,7 @@ fieldset:disabled a.btn {
     from {
         background-position: 1rem 0
     }
+
     to {
         background-position: 0 0
     }
@@ -1485,6 +1517,7 @@ fieldset:disabled a.btn {
     from {
         background-position: 1rem 0
     }
+
     to {
         background-position: 0 0
     }
@@ -1864,6 +1897,7 @@ button.close {
 }
 
 @media screen and (prefers-reduced-motion:reduce) {
+
     .carousel-item-next,
     .carousel-item-prev,
     .carousel-item.active {
@@ -1884,6 +1918,7 @@ button.close {
 }
 
 @supports ((-webkit-transform-style:preserve-3d) or (transform-style:preserve-3d)) {
+
     .carousel-item-next.carousel-item-left,
     .carousel-item-prev.carousel-item-right {
         -webkit-transform: translate3d(0, 0, 0);
@@ -1898,6 +1933,7 @@ button.close {
 }
 
 @supports ((-webkit-transform-style:preserve-3d) or (transform-style:preserve-3d)) {
+
     .active.carousel-item-right,
     .carousel-item-next {
         -webkit-transform: translate3d(100%, 0, 0);
@@ -1912,6 +1948,7 @@ button.close {
 }
 
 @supports ((-webkit-transform-style:preserve-3d) or (transform-style:preserve-3d)) {
+
     .active.carousel-item-left,
     .carousel-item-prev {
         -webkit-transform: translate3d(-100%, 0, 0);
@@ -2073,55 +2110,69 @@ button.close {
 }
 
 @media print {
+
     *,
     ::after,
     ::before {
         text-shadow: none !important;
         box-shadow: none !important
     }
+
     a:not(.btn) {
         text-decoration: underline
     }
+
     pre {
         white-space: pre-wrap !important
     }
+
     blockquote,
     pre {
         border: 1px solid #adb5bd;
         page-break-inside: avoid
     }
+
     thead {
         display: table-header-group
     }
+
     img,
     tr {
         page-break-inside: avoid
     }
+
     h2,
     h3,
     p {
         orphans: 3;
         widows: 3
     }
+
     h2,
     h3 {
         page-break-after: avoid
     }
+
     @page {
         size: a3
     }
+
     body {
         min-width: 992px !important
     }
+
     .container {
         min-width: 992px !important
     }
+
     .navbar {
         display: none
     }
+
     .table {
         border-collapse: collapse !important
     }
+
     .table td,
     .table th {
         background-color: #fff !important

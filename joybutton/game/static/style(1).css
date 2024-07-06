@@ -538,7 +538,8 @@ img {
   /* justify-content: center; */
   margin: auto;
   /* gap: 10px; */
-  font-size: 17px;
+  font-size: 19px;
+  letter-spacing: 1px;
   color: white;
 }
 
@@ -1440,12 +1441,12 @@ body.blog_page p {
 .comment-form .email {
   padding-right: 0px;
 }
-
+/* 
 @media (max-width: 991px) {
   .comment-form .email {
     padding-left: 0px;
   }
-}
+} */
 
 .comment-form .form-control {
   padding: 8px 20px;
@@ -2221,11 +2222,11 @@ h6 {
   border-left: 2px solid #f8b600;
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .progress-table-wrap {
     overflow-x: scroll;
   }
-}
+} */
 
 .progress-table {
   background: #fff;
@@ -2993,12 +2994,12 @@ h6 {
 .default-select .nice-select::after {
   right: 20px;
 }
-
+/* 
 @media (max-width: 991px) {
   .left-align-p p {
     margin-top: 20px;
   }
-}
+} */
 
 .form-select {
   height: 40px;
@@ -3686,11 +3687,11 @@ h6 {
   }
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) { */
 
   /* Main Menu Area css
   ============================================================================================ */
-  .navbar-toggler {
+  /* .navbar-toggler {
     border: none;
     border-radius: 0px;
     padding: 0px;
@@ -3698,10 +3699,6 @@ h6 {
     margin-top: 27px;
     margin-bottom: 23px;
   }
-
-  /* .header_area .navbar {
-    background: #000;
-  } */
 
   .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
     opacity: 1;
@@ -3746,7 +3743,7 @@ h6 {
   .header_area+section,
   .header_area+row,
   .header_area+div {
-    /* margin-top: 117px; */
+    margin-top: 117px;
   }
 
   .header_area .navbar .nav .nav-item .nav-link {
@@ -3772,17 +3769,17 @@ h6 {
 
   .header_area .navbar .nav .nav-item {
     margin-right: 0px;
-  }
+  } */
 
-  .header_area+section,
+  /* .header_area+section,
   .header_area+row,
   .header_area+div {
     margin-top: 71px;
-  }
+  } */
 
-  .header_area.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
+  /* .header_area.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
     line-height: 40px;
-  }
+  } */
 
   .header_area {
     position: absolute;
@@ -3792,12 +3789,12 @@ h6 {
     z-index: 9999;
     background: #2c2172;
   }
-  
+
   /* End Main Menu Area css
   ============================================================================================ */
   /* Blog page Area css
   ============================================================================================ */
-  .categories_post img {
+  /* .categories_post img {
     width: 100%;
   }
 
@@ -3816,32 +3813,32 @@ h6 {
 
   .single-post-area .blog_right_sidebar {
     margin-top: 30px;
-  }
+  } */
 
   /* End Blog page Area css
   ============================================================================================ */
   /* Contact Page Area css
   ============================================================================================ */
-  .contact_info {
+  /* .contact_info {
     margin-bottom: 50px;
-  }
+  } */
 
   /* End Contact page Area css
   ============================================================================================ */
 
   /* Footer Area css
   ============================================================================================ */
-  .footer_area .col-sm-6 {
+  /* .footer_area .col-sm-6 {
     margin-bottom: 30px;
   }
 
   .footer_area .footer_inner {
     margin-bottom: -30px;
-  }
+  } */
 
   /* End End Footer Area css
   ============================================================================================ */
-  .home_banner_area .banner_inner .home_left_img {
+  /* .home_banner_area .banner_inner .home_left_img {
     display: none;
   }
 
@@ -3852,7 +3849,7 @@ h6 {
   .home_banner_area .banner_inner {
     padding: 70px 0px 100px 0px;
   }
-}
+} */
 
 @media (max-width: 767px) {
   /* .home_banner_area {
@@ -4050,7 +4047,7 @@ h6 {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .section_gap {
+  /* .section_gap {
     padding: 80px 0;
   }
 
@@ -4152,7 +4149,7 @@ h6 {
   .about_page .frequently_area,
   .upcoming_games .frequently_area {
     padding: 80px 0;
-  }
+  } */
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {

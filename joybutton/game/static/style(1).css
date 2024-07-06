@@ -271,7 +271,7 @@ img {
 
 /* Start Video Play css
 ============================================================================================ */
-.video-play-button {
+/* .video-play-button {
   position: relative;
   box-sizing: content-box;
   display: inline-block;
@@ -327,7 +327,7 @@ img {
 
 .video-play-button:hover:after {
   background-color: #0cbcff;
-}
+} */
 
 @keyframes pulse-border {
   0% {
@@ -524,22 +524,93 @@ img {
 ============================================================================================ */
 .home_banner_area {
   z-index: 1;
-  background: url(../img/banner/home-banner.jpg) no-repeat center center;
+  background: url(images/colorful-background-with-pattern-hexagons-hexagons_784842-4599.jpg) no-repeat center center;
   background-size: cover;
+  height: 100vh;
 }
 
-.home_banner_area .banner_inner {
-  width: 100%;
+.home_banner_area .banner_content {
+  /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 70%;
+  /* justify-content: center; */
+  margin: auto;
+  /* gap: 10px; */
+  font-size: 17px;
+  color: white;
 }
 
-.home_banner_area .banner_inner .home_left_img {
-  padding-top: 230px;
-  padding-bottom: 230px;
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
 }
+
+.banner_content h2 {
+  margin: auto;
+  font-size: 5rem;
+  font-weight: 300;
+  animation: lights 5s 750ms linear infinite;
+}
+
+.banner_content p{
+  margin-top: -100px;
+
+}
+
+/* 
+
+
 
 .home_banner_area .banner_inner .col-lg-6 {
-  vertical-align: middle;
-  align-self: center;
+  transform: translateY(50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home_banner_area .banner_inner .banner_content {
@@ -560,20 +631,6 @@ img {
   color: #fff;
   font-size: 16px;
   margin-bottom: 20px;
-}
-
-.home_banner_area .banner_inner .banner_content .watch_video {
-  margin: 0 30px;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-.banner_area {
-  position: relative;
-  min-height: 430px;
-  z-index: 1;
-  background: url(../img/banner/home-banner.jpg) no-repeat center center;
-  background-size: cover;
 }
 
 .banner_area .banner_inner {
@@ -626,7 +683,7 @@ img {
 
 .banner_area .banner_inner .banner_content .page_link a:hover {
   color: #3fcaff;
-}
+} */
 
 /* End Home Banner Area css
 ============================================================================================ */
@@ -3202,6 +3259,7 @@ h6 {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
 .single-gallery .content i {
   font-size: 36px;
   font-weight: 600;
@@ -3641,9 +3699,9 @@ h6 {
     margin-bottom: 23px;
   }
 
-  .header_area .navbar {
+  /* .header_area .navbar {
     background: #000;
-  }
+  } */
 
   .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
     opacity: 1;
@@ -3688,7 +3746,7 @@ h6 {
   .header_area+section,
   .header_area+row,
   .header_area+div {
-    margin-top: 117px;
+    /* margin-top: 117px; */
   }
 
   .header_area .navbar .nav .nav-item .nav-link {
@@ -3726,6 +3784,15 @@ h6 {
     line-height: 40px;
   }
 
+  .header_area {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: #2c2172;
+  }
+  
   /* End Main Menu Area css
   ============================================================================================ */
   /* Blog page Area css
@@ -3788,7 +3855,7 @@ h6 {
 }
 
 @media (max-width: 767px) {
-  .home_banner_area {
+  /* .home_banner_area {
     min-height: 500px;
   }
 
@@ -3798,7 +3865,7 @@ h6 {
 
   .home_banner_area .banner_inner .banner_content {
     margin-top: 0px;
-  }
+  } */
 
   /* Blog Page Area css
   ============================================================================================ */
@@ -3810,7 +3877,7 @@ h6 {
 
   /* End Blog Page Area css
   ============================================================================================ */
-  .home_banner_area .banner_inner .banner_content h3 {
+  /* .home_banner_area .banner_inner .banner_content h3 {
     font-size: 30px;
   }
 
@@ -3822,7 +3889,7 @@ h6 {
     line-height: 45px;
     padding-bottom: 0px;
     padding-top: 0px;
-  }
+  } */
 
   /* Footer Area css
   ============================================================================================ */
